@@ -14,17 +14,11 @@
                 <div class="card-header">{{$resep->judul}}</div>
                 <div class="card-body">
                     <h3>Bahan - bahan</h3>
-                    <ul>
-                        <li>{{$resep->bahan}}</li>
-                    </ul>
+                    {!!$resep->bahan!!}
                     <h3>Alat - alat</h3>
-                    <ul>
-                        <li>{{$resep->alat}}</li>
-                    </ul>
+                    {!!$resep->alat!!}
                     <h3>Langkah</h3>
-                    <ul>
-                        <li>{{$resep->langkah}}</li>
-                    </ul>
+                    {!!$resep->langkah!!}
                     <a class="btn btn-success" href="{{ route('resep.index') }}">Kembali</a>
                 </div>
             </div>

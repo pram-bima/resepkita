@@ -47,12 +47,12 @@
 </head>
 <body>
 	<div class="container pt-4 bg-white">
-		<div class="row">
-			<div class="col-md-10">
+		<div class="row justify-content-center">
+			<div class="col-md-7">
 				
-				<h1>Input Resep Baru</h1>
+				<h1>Daftarkan Resep Anda!</h1>
 				<hr>
-				<form action="{{ route('resep.store') }}" method="POST">
+				<form action="{{ route('resep.store') }}" method="POST" enctype="multipart/form-data">
 					@csrf
 					<div class="form-group">
 						<label for="judul">Judul Resep</label>
@@ -62,8 +62,8 @@
 						@enderror
 					</div>
 					<div class="form-group">
-						<label for="gambar">Gambar Makanan</label>
-						<input type="text" class="form-control" id="gambar" name="gambar" value="{{old('gambar')}}">
+  						<label for="formFile" class="form-label">Gambar Makanan</label>
+  						<input type="file" class="form-control" id="gambar" name="gambar" value="{{old('gambar')}}">
 						@error('gambar')
 							<div class="text-danger">{{$message}}</div>
 						@enderror

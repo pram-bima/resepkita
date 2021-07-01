@@ -36,8 +36,7 @@
                     <ul class="navbar-nav mr-auto">
                     @auth
                     <form>
-                    <a class="btn btn-primary" href="/resep" role="button">Daftar Resep</a>
-                    <a class="btn btn-primary" href="/resep/create" role="button">Tambah Resep Baru</a>
+                    <a class="btn btn-primary" href="/resep" role="button">Resep Saya</a>
                     </form>
                     @endauth
                     </ul>
