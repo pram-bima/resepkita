@@ -15,13 +15,9 @@
                 <div class="card-header">{{$item->judul}}</div>
 
                 <div class="card-body">
-                    <h3>Bahan - bahan</h3>
-                    {!!$item->bahan!!}
-                    <h3>Alat - alat</h3>
-                    {!!$item->alat!!}
-                    <h3>Langkah</h3>
-                    {!!$item->langkah!!}
-                    <a class="btn btn-info" href="{{ route('resep.show',$item->id) }}">Selengkapnya</a>
+                    <img class="img-fluid mb-3" src="<?= URL::to('/data_gambar'); ?>/{{$item->gambar}}">
+
+                    <a class="btn btn-info" href="{{ route('home.detail',$item->id) }}">Selengkapnya</a>
                 </div>
             </div>
         </div>

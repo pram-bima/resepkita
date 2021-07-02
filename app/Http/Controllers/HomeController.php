@@ -27,4 +27,8 @@ class HomeController extends Controller
         $resep = Resep::all();
         return view('home', compact('resep'));
     }
+
+    public function detail(Resep $resep) {
+        return view('homedetail', compact('resep'));
+    }
 }

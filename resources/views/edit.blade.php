@@ -91,7 +91,7 @@
 						@enderror
 					</div>
 					<a class="btn btn-success mb-2" href="{{ route('resep.index') }}">Kembali</a>
-					<button type="submit" class="btn btn-primary mb-2">Daftarkan Resep</button>
+					<button type="submit" class="btn btn-primary mb-2">Perbarui Resep</button>
 				</form>
 			</div>
 		</div>
